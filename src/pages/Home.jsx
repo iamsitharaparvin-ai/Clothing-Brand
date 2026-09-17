@@ -1,15 +1,15 @@
-import Navbar from "../component/Navbar";
-import Hero from "../component/Hero";
-import PopularCategory from "../component/PopularCategory";
-import ProductCard from "../component/ProductCard";
-import Offer from "../component/Offer";
-import MovingText from "../component/Movingtext";
-import YoutubeShorts from "../component/YoutubeShorts";
-import Blog from "../component/Blog";
-import Features from "../component/features";
-import AboutSection from "../component/AboutSection";
-import StoreInfo from "../component/StoreInfo";
-import Footer from "../component/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import PopularCategory from "../components/PopularCategory";
+import ProductCard from "../components/ProductCard";
+import Offer from "../components/Offer";
+import MovingText from "../components/MovingText";
+import YoutubeShorts from "../components/YoutubeShorts";
+import Blog from "../components/Blog";
+import Features from "../components/features";
+import AboutSection from "../components/AboutSection";
+import StoreInfo from "../components/StoreInfo";
+import Footer from "../components/Footer";
 
 function Home() {
   return (

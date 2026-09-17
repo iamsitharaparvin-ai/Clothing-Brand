@@ -9,7 +9,7 @@ import Wishlist from "./pages/WhishList";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 
-import ProductCard from "./component/ProductCard";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   return (

@@ -1,11 +1,11 @@
-import Navbar from "../component/Navbar";
-import BlogSection from "../component/Blog";
-import Footer from "../component/Footer";
+import Navbar from "../components/Navbar";
+import BlogSection from "../components/Blog";
+import Footer from "../components/Footer";
 
 function Blog() {
 
   return (
-    
+
     <div className="min-h-screen bg-white">
       <Navbar />
 
