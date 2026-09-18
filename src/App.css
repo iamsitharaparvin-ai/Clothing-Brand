@@ -487,6 +487,563 @@
 
 
 /* =========================================================
+   PRODUCT SECTION
+========================================================= */
+
+.product-section {
+  padding: 70px 40px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.product-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.product-heading p {
+  color: #a85d35;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.product-heading h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 12px;
+}
+
+.product-heading span {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.product-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.reference-product-card {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.reference-product-image {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #f4f4f4;
+}
+
+.reference-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.reference-product-card:hover
+.reference-product-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   NEW ARRIVAL
+========================================================= */
+
+.new-arrival {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   WISHLIST
+========================================================= */
+
+.wishlist-btn {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  background: #a85d35;
+  color: white;
+}
+
+
+/* =========================================================
+   PRODUCT OFFER MARQUEE
+========================================================= */
+
+.offer-marquee {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 44px;
+  background: #a85d35;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.offer-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: max-content;
+  white-space: nowrap;
+  animation: offerMove 10s linear infinite;
+}
+
+.offer-track span {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.reference-product-details {
+  text-align: center;
+  padding: 20px 5px 10px;
+}
+
+.product-category {
+  color: #a85d35;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.reference-product-details h3 {
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  min-height: 60px;
+  margin: 0;
+}
+
+
+/* =========================================================
+   PRODUCT RATING
+========================================================= */
+
+.product-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.stars svg {
+  color: #fbbf24;
+  fill: #fbbf24;
+  font-size: 18px;
+}
+
+.product-rating span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   PRODUCT PRICE
+========================================================= */
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.old-price {
+  color: #8b8b8b;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #1f2937;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.discount {
+  background: #e74c4c;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   CART BUTTON
+========================================================= */
+
+.reference-cart-btn {
+  width: 100%;
+  height: 52px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  background: #a85d35;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reference-cart-btn:hover {
+  background: #8f4825;
+  transform: translateY(-2px);
+}
+
+.reference-cart-btn svg {
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   PRODUCT SWIPER
+========================================================= */
+
+.productSwiper {
+  padding-bottom: 55px !important;
+}
+
+.productSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.productSwiper .swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 20px;
+  background: #a85d35;
+}
+
+
+/* =========================================================
+   MOVING TEXT
+========================================================= */
+
+.moving-text {
+  width: 100%;
+  overflow: hidden;
+  background: #a85d35;
+  padding: 12px 0;
+  white-space: nowrap;
+}
+
+.moving-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marqueeMove 18s linear infinite;
+  will-change: transform;
+}
+
+.moving-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 55px;
+  flex-shrink: 0;
+}
+
+.moving-star {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.moving-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   YOUTUBE SHORTS
+========================================================= */
+
+.youtube-shorts {
+  padding: 70px 40px;
+  background: #ffffff;
+}
+
+.shorts-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.shorts-heading p {
+  color: #a85d35;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.shorts-heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.shorts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.short-card {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+.short-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+/* =========================================================
+   BLOG SECTION
+========================================================= */
+
+.blog-section {
+  padding: 70px 60px;
+  background: #f7f7f8;
+  overflow: hidden;
+}
+
+.blog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto 50px;
+}
+
+.blog-heading p {
+  font-size: 18px;
+  color: #777;
+  margin: 0 0 10px;
+}
+
+.blog-heading h2 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   VIEW BLOG BUTTON
+========================================================= */
+
+.view-blog-btn {
+  border: none;
+  background: #f8f4ef;
+  color: #a85d35;
+  padding: 15px 26px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-blog-btn svg {
+  font-size: 20px;
+}
+
+.view-blog-btn:hover {
+  background: #a85d35;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   BLOG GRID
+========================================================= */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1400px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.blog-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+/* =========================================================
+   BLOG IMAGE
+========================================================= */
+
+.blog-img {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   BLOG META
+========================================================= */
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #68717c;
+  margin-bottom: 12px;
+}
+
+.blog-meta .slash {
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
+
+/* =========================================================
+   BLOG TITLE
+========================================================= */
+
+.blog-card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #1c2530;
+  margin: 0 0 18px;
+  min-height: 92px;
+}
+
+
+/* =========================================================
+   BLOG INFO
+========================================================= */
+
+.blog-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #68717c;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: 22px;
+}
+
+.blog-info div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-info svg {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
    READ MORE BUTTON
 ========================================================= */
 
@@ -500,12 +1057,10 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
-
   transition:
     background 0.35s ease,
     color 0.35s ease,
@@ -687,7 +1242,7 @@ img {
 
 
 /* =========================================================
-   MARQUEE
+   MARQUEE ANIMATIONS
 ========================================================= */
 
 @keyframes marqueeMove {
@@ -722,36 +1277,10 @@ img {
 
 
 /* =========================================================
-   BLOG IMAGES
-========================================================= */
-
-.blog-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
-}
-
-
-/* =========================================================
-   PRODUCT IMAGES
-========================================================= */
-
-.reference-product-image {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  object-position: center;
-}
-
-
-/* =========================================================
    LARGE DESKTOP
 ========================================================= */
 
 @media (max-width: 1400px) {
-
   .blog-img {
     height: 270px;
   }
@@ -767,7 +1296,6 @@ img {
 ========================================================= */
 
 @media (max-width: 1200px) {
-
   .blog-section {
     padding: 65px 40px;
   }
@@ -792,7 +1320,6 @@ img {
 ========================================================= */
 
 @media (max-width: 1024px) {
-
   .product-section {
     padding: 60px 30px;
   }
@@ -816,7 +1343,6 @@ img {
 ========================================================= */
 
 @media (max-width: 900px) {
-
   .blog-section {
     padding: 60px 35px;
   }
@@ -948,6 +1474,9 @@ img {
   .wishlist-btn {
     top: 15px;
     right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
   }
 
 
