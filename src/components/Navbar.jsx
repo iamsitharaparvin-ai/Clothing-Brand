@@ -16,17 +16,19 @@ function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="relative z-50 border-b border-[#E9DED4] bg-white px-5 py-5 md:px-6 lg:px-10 xl:px-14">
+      <nav className="relative z-50 border-b border-[#E9DED4] bg-white px-5 py-3 md:px-6 lg:px-10 xl:px-14">
         <div className="flex items-center">
 
-          <div className="flex-shrink-0">
+          <div className=" flex flex-col items-center text-center gap-0">
             <Link href="/home">
               <div className="cursor-pointer">
-                <h1 className="font-logo text-2xl text-[#A85D35] md:text-3xl">
+                <img src="/image/logolilux.png" className="w-30" alt="" />
+                <h1 className="font-logo text-3xl text-[#A85D35] md:text-3xl m-0 font-bold leading-tight -mt-5">
                   LILUX
                 </h1>
               </div>
             </Link>
+            <p className="text-[#A85D35] text-[10px] uppercase tracking-widest -mt-2">KIDS CLOTHING</p>
           </div>
 
           <div className="hidden flex-1 xl:block" />
